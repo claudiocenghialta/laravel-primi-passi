@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: yellow;
+}
+
+main {
+  background-image: url(/images/background.jpg?7062df19ee671fcb013069887797dac5);
+}
+
+.cards .card img {
+  width: 200px;
+}
+
