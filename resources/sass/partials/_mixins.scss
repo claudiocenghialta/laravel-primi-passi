@@ -1,0 +1,12 @@
+@mixin my-flex($direction, $justify, $align, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin my-centered-section() {
+    margin: 0 auto;
+    max-width: $maxwidth;
+}

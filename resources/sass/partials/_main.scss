@@ -1,7 +1,32 @@
 main {
     background-image: url('../../img/background.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include my-centered-section;
+
+}
+
+.cards {
+    @include my-flex(column, space-around, flex-start, wrap)
+}
+
+.cards section {
+    @include my-flex(row, flex-start, center, wrap);
+    padding: 40px;
+}
+
+
+.cards h2 {
+    color: black;
+    margin: 30px 0;
+}
+
+.cards .card {
+    padding: 10px;
 }
 
 .cards .card img {
-    width: 200px;
+    width: $cards-img-width;
 }
