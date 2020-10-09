@@ -6,27 +6,26 @@ main {
 
     @include my-centered-section;
 
-}
+    .cards {
+        @include my-flex(column, space-around, flex-start, wrap);
 
-.cards {
-    @include my-flex(column, space-around, flex-start, wrap)
-}
+        section {
+            @include my-flex(row, flex-start, center, wrap);
+            padding: 40px;
+        }
 
-.cards section {
-    @include my-flex(row, flex-start, center, wrap);
-    padding: 40px;
-}
+        h2 {
+            color: black;
+            margin: 30px 0;
+        }
 
+        .card {
+            padding: 10px;
 
-.cards h2 {
-    color: black;
-    margin: 30px 0;
-}
+            img {
+                width: $cards-img-width;
+            }
 
-.cards .card {
-    padding: 10px;
-}
-
-.cards .card img {
-    width: $cards-img-width;
+        }
+    }
 }

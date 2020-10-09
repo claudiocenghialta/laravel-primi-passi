@@ -1,5 +1,2 @@
-<footer>
-   <small>Proudly made by Claudio Cenghialta</small> 
-</footer>
-</body>
-</html>
+
+<small>Made by Claudio Cenghialta</small> 
